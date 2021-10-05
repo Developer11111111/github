@@ -15,6 +15,7 @@ public class TestControl {
     @GetMapping("/test/{id}")
     public ResponseEntity getAll(@PathVariable int id){
         GetRequest getRequest = new GetRequest(id,"Mark","Succerberg");
+        GetRequest getRequest1 = new GetRequest(1,"Bill","Geyts");
         return ResponseEntity.ok(getRequest);
     }
 
